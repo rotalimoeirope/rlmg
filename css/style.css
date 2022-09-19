@@ -1,0 +1,387 @@
+.clear{
+	clear: both;
+}
+.container{
+	max-width: 1170px;
+	margin:0 auto;
+}
+section.destaque{
+	padding-top: 50px;
+}
+.destaque_news{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: 'Fira-Sans-SemiBold';
+	color: var(--clr-medium-green);
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 15px;
+}
+.star{
+	display: inline-block;
+	width: 25px;
+	height: 24px;
+	background-image: url(../assets/star.svg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0px;
+}
+.news{
+	display: inline-block;
+	width: 29px;
+	height: 29px;
+	background-image: url(../assets/news.svg);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0px;
+}
+
+.interna-titulo{
+	font-size: 1.5rem;
+	font-weight:  bold;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	color:#fff;
+}
+.interna-data{
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	color:#fff;
+}
+.interna-texto2{
+	line-height: 1.5;
+	margin-bottom: 20px;
+	color:#fff;
+}
+.interna-img2{
+	text-align:  center;
+	margin-bottom: 20px;;
+}
+section.destaque .left{
+	float: left;
+	width: 49.57264957264957%; /*580*/
+}
+section.destaque .left ul li{
+	border:thin solid #E8E8E8;
+	border-radius: 3px;
+	padding: 15px 10px;
+	margin-bottom: 4px;
+	margin-right:  10px;
+	color: #fff;
+}
+section.destaque .right{
+	float: right;
+	width: 49.57264957264957%; /*580*/
+}
+section.destaque .right ul li{
+	border:thin solid #E8E8E8;
+	border-radius: 3px;
+	padding: 15px 10px;
+	margin-bottom: 4px;
+	color: #fff;
+	cursor: pointer;
+	transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-ms-transition: all ease 0.5s;
+}
+section.destaque .right ul li:hover{
+	background: var(--clr-medium-green);
+	color: #fff;
+}
+section.destaque .right ul li:last-child{
+	margin-bottom: 20px;
+}
+section.fotos{
+	padding-top: 40px;
+}
+section.fotos h2{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: 'Fira-Sans-SemiBold';
+	color: #ED1C24;
+	position: relative;
+	padding-left: 40px;
+	margin-bottom: 5px;
+}
+section.fotos .bloco{
+	width: 25%;/*292.5*/
+	min-height: 175px;
+	float: left;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	padding: 5px;
+	margin-bottom: 10px;
+
+}
+section.fotos .bloco img{
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+section.fotos .bloco .overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(239,175,19,.8);
+	z-index: 2;
+	padding: 10px;
+	font-family: 'Fira-Sans-SemiBold';
+	visibility: hidden;
+	opacity: 0;
+	transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-ms-transition: all ease 0.5s;
+	cursor: pointer;
+}
+section.fotos .bloco:hover > .overlay{
+	visibility: visible;
+	opacity: 1;
+}
+
+section.parceiros{
+	width: 100%;
+	padding-top: 80px;
+}
+section.parceiros h2{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: 'Fira-Sans-SemiBold';
+	color: #ED1C24;
+	margin: 0px auto 20px auto;
+	display: table;
+}
+section.parceiros .bloco{
+	width: 16.66666666666667%; /*195*/
+	height:100px;
+	float: left;
+	border:thin solid #ccc;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+
+/* Dicas de viagens */
+section.dicas{
+	width: 100%;
+}
+section.dicas ul li{
+	border:thin solid #ccc;
+	padding: 35px 10px 10px;
+	margin-bottom: 5px;
+	position: relative;
+}
+
+@media screen and (max-width: 1190px){
+	.container{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	section.memorias .bloco{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 960px){
+	.menu ul{
+		width: 250px;
+		background: rgba(0,0,0,.9);
+		position: absolute;
+		top:80px;
+		right: 60px;
+		display: none;
+		z-index: 9999;
+	}
+	.menu ul li{
+		display: block;
+		color: #EFAF13;
+		padding: 20px 10px;
+	}
+	.menu ul li.contato{
+		text-align: center;
+		padding: 20px 10px;
+	}
+	.menu button{
+		display: block;
+		position: absolute;
+		top:80px;
+		right: 20px;
+	}
+	section.banner{
+		min-height: 500px;
+	}
+	section.historico .right{
+		margin-top: -100px;
+	}
+	section.destaque .right{
+		float: none;
+		width: 100%;
+	}
+	section.destaque .left{
+		float: none;
+		width: 100%;
+		
+	}
+	section.acao .bloco{
+		width: 33.33333333333333%;
+	}
+	section.fotos .bloco{
+		width: 50%;
+	}
+	section.videos .bloco{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 850px){
+	.img{
+		float: none;
+		width: 100%;
+		padding-right: 0px;
+	}
+	.img img{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 750px){
+	section.historico{
+		position: relative;
+	}
+	section.historico .right{
+		float: none;
+		width: 150px;
+		margin-bottom: 20px;
+	}
+	section.historico .left{
+		float: none;
+		width: 100%;
+		padding: 0px;
+	}
+	section.historico .left p{
+		padding: 0px;
+	}
+	section.acao .bloco{
+	width: 50%;
+	}
+	section.memorias .bloco{
+		width: 100%;
+		}
+}
+
+@media screen and (max-width: 600px){
+	section.banner{
+		min-height: 300px;
+		padding-top: 90px;
+	}
+	section.banner h2{
+		font-size: 20px;
+	}
+	section.banner span{
+		font-size: 30px;
+	}
+	section.banner p{
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	section.acao .bloco{
+		width: 100%;
+		float: none;
+	}
+	section.memorias .bloco{
+		width: 100%;
+		float: none;
+	}
+	section.fotos .bloco{
+		width: 100%;
+		float: none;
+	}
+	section.videos .bloco{
+		width: 100%;
+		float: none;
+	}
+}
+
+
+/* pagination */
+.pagination {
+	display: inline-block;
+	padding-left: 0;
+	margin: 10px 0 10px 0;
+	border-radius: 4px;
+  }
+  .pagination > li {
+	display: inline;
+  }
+  .pagination > li > a,
+  .pagination > li > span {
+	position: relative;
+	float: left;
+	padding: 6px 12px;
+	margin-left: -1px;
+	line-height: 1.42857143;
+	color: #222;
+	text-decoration: none;
+	background-color: #fff;
+	border: 1px solid #ddd;
+  }
+  .pagination > li:first-child > a,
+  .pagination > li:first-child > span {
+	margin-left: 0;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+  }
+  .pagination > li:last-child > a,
+  .pagination > li:last-child > span {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+  }
+  .pagination > li > a:hover,
+  .pagination > li > span:hover,
+  .pagination > li > a:focus,
+  .pagination > li > span:focus {
+	z-index: 2;
+	color: #23527c;
+	background-color: #eee;
+	border-color: #ddd;
+  }
+  .pagination > .active > a,
+  .pagination > .active > span,
+  .pagination > .active > a:hover,
+  .pagination > .active > span:hover,
+  .pagination > .active > a:focus,
+  .pagination > .active > span:focus {
+	z-index: 3;
+	color: #fff;
+	cursor: default;
+	background-color: #222;
+	border-color: #222;
+  }
+  .pagination > .disabled > span,
+  .pagination > .disabled > span:hover,
+  .pagination > .disabled > span:focus,
+  .pagination > .disabled > a,
+  .pagination > .disabled > a:hover,
+  .pagination > .disabled > a:focus {
+	color: #777;
+	cursor: not-allowed;
+	background-color: #fff;
+	border-color: #ddd;
+  }
+  .pagination-lg > li > a,
+  .pagination-lg > li > span {
+	padding: 10px 16px;
+	font-size: 18px;
+  }
+  /* fim - pagination */
+
+ 

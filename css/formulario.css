@@ -1,0 +1,76 @@
+  /* formulários */
+  form, fieldset, label, .grupo, .campo {
+    margin: 0;
+    padding: 0;
+	font-size: 13px;
+	font-weight: 800;
+	color: var(--clr-white);
+	
+}
+input, textarea, select {
+	margin: 0px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #DDD;
+	color: #000000;	
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+}
+input:radio{
+	border: 0px;
+}
+button {
+	margin: 0px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 2px solid var(--clr-medium-green);
+	border-radius: 10px;
+	background: var(--clr-medium-green);
+	color: #FFF;	
+	cursor: pointer;
+}
+
+button:hover{
+color: #000000;
+}
+fieldset {
+    border: 0;
+}
+.campo {
+    margin-bottom: 15px;
+}
+ 
+.campo_label {
+    margin-bottom: 5px;
+	font-weight: normal;
+}
+
+fieldset.grupo {
+	margin-right: -10px;
+	margin-left: -10px;
+}
+fieldset.grupo .campo {
+    float:  left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+@media screen and (max-width: 767px){
+	fieldset.grupo {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	fieldset.grupo .campo {
+		float: none;
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 100% !important;
+	}
+}
+/* fim - formulários */
