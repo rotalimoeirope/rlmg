@@ -23,7 +23,6 @@ Ou realizar o download do arquivo zip no repositório no github.
 * [HTML5]
 * [CSS]
 * [JavaScript]
-* [PHP]
 
 ---
 ⌨️ com ❤️ por [Felipe Dantas] 😊
