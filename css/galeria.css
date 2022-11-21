@@ -1,7 +1,12 @@
-.galeria{
+/*.galeria{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+}*/
+
+.galeria{
+    column-count: 5;
+    column-gap: 1rem;
 }
 
 .galeria-item{
