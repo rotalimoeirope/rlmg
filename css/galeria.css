@@ -5,7 +5,7 @@
 }*/
 
 .galeria{
-    column-count: 5;
+    column-count: 4;
     column-gap: 2rem;
 }
 
@@ -17,8 +17,7 @@
 }
 
 .galeria-item img{
-    width: 40rem;
-    height: 40rem;
+    width: 100%;
 }
 
 .galeria-item__thumb{
