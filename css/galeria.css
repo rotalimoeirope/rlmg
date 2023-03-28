@@ -61,14 +61,14 @@
     opacity: .7;
 }
 
-@media screen and (min-width:768px){
+@media screen and (max-width:768px){
     .galeria{
         display: flex;
         flex-wrap: wrap;
     }
 
     .galeria-item{
-        flex:  0 0 50%;
+        flex:  0 0 40%;
     }
 }
 
