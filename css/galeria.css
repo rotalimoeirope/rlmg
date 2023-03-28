@@ -9,12 +9,12 @@
     column-gap: 2rem;
 }
 
-/*.galeria-item{
+.galeria-item{
     position: relative;
     min-width: 17rem;
     cursor: pointer;
     overflow: hidden;
-}*/
+}
 
 .galeria-item img{
     width: 100%;
