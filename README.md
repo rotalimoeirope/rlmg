@@ -6,7 +6,7 @@ Site do motogrupo Rota Limoeiro
 
 Para acessar o site, basta clicar no link abaixo
 
-https://rotalimoeirope.github.io/rlmg
+rotalimoeirope.com.br
 
 ### Baixando o Projeto
 
